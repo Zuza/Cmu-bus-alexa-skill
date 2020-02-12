@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Tells you when is the next CMU (Carnegie Mellon University) shuttle departing from Morewood.",
+          "examplePhrases": [
+            "Alexa open cmu bus",
+            "Alexa start cmu bus",
+            "Alexa launch cmu bus"
+          ],
+          "keywords": [
+            "cmu",
+            "bus",
+            "schedule",
+            "shuttle"
+          ],
+          "name": "Cmu Bus",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "description": "Let Alexa tell you when is the next CMU (Carnegie Mellon University) shuttle leaving so that you know when you should pack up and go wait for it. It works for both weekdays and weekends and for both AB and A shuttles (note that A and B leave at the same time).\n\nNote: Holidays are currently not supported, it might misbehave on them.",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "This is a simple app that has no prompts, it simply reports the next/previous time the Carnegie Mellon University\u0027s shuttles left/will leave.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:447698956992:function:c5482f2c-8e29-4440-8df7-9ae17b754744:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
